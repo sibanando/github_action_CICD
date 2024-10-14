@@ -38,7 +38,7 @@ jobs:
         with:
           projectBaseDir: .
           args: >
-            -Dsonar.projectKey=github_action_CICD -Dsonar.host.url=${{ env.SONAR_HOST_URL
+            -Dsonar.projectKey=github_action_CICD_proj -Dsonar.host.url=${{ env.SONAR_HOST_URL
             }} -Dsonar.login=${{ env.SONAR_TOKEN }}
             -Dsonar.working.directory=./.scannerwork
       - name: Print SonarQube Logs
